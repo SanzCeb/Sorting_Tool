@@ -1,9 +1,10 @@
-package sorting;
+package sorting.algorithms;
 
 public enum SortingType {
+
     NATURAL, BY_COUNT;
 
-    static SortingType parse(String sortingType) {
+    public static SortingType parse(String sortingType) {
         switch (sortingType) {
             case "byCount":
                 return BY_COUNT;

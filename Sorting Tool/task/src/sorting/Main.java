@@ -1,6 +1,8 @@
 package sorting;
 
 import java.util.*;
+import sorting.algorithms.SortingType;
+import sorting.tools.*;
 
 
 public class Main {

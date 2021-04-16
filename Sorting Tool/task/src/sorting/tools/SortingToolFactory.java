@@ -1,9 +1,12 @@
-package sorting;
+package sorting.tools;
+
+import sorting.algorithms.SortingType;
 
 public class SortingToolFactory {
+
     public static SortingTool getSortingTool(SortingType sortingType, String dataType) {
         var newSorter = getSorter(dataType);
-        newSorter.setSorting(sortingType);
+        newSorter.setSortingType(sortingType);
         return newSorter;
     }
 
@@ -14,7 +17,7 @@ public class SortingToolFactory {
             case "long":
                 newSorter = new NumbersSortingTool();
                 break;
-            case "lines":
+            case "line":
                 newSorter = new LinesSortingTool();
                 break;
             default:
